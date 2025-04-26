@@ -1,0 +1,28 @@
+### Criar Entregador
+POST http://localhost:3000/entregador
+Content-Type: application/json
+
+{
+  "nome": "Carlos Souza",
+  "telefone": "123456789",
+  "status": "ativo"
+}
+
+### Buscar Entregador por ID
+GET http://localhost:3000/entregador/{id}
+
+### Atualizar Entregador
+PUT http://localhost:3000/entregador/{id}
+Content-Type: application/json
+
+{
+  "nome": "Carlos Souza Atualizado",
+  "telefone": "987654321",
+  "status": "inativo"
+}
+
+### Deletar Entregador
+DELETE http://localhost:3000/entregador/{id}
+
+### Listar Todos os Entregadores
+GET http://localhost:3000/entregador

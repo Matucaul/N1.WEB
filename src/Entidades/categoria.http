@@ -1,0 +1,24 @@
+### Criar Categoria
+POST http://localhost:3000/categoria
+Content-Type: application/json
+
+{
+  "nome": "Categoria A"
+}
+
+### Buscar Categoria por ID
+GET http://localhost:3000/categoria/{id}
+
+### Atualizar Categoria
+PUT http://localhost:3000/categoria/{id}
+Content-Type: application/json
+
+{
+  "nome": "Categoria A Atualizada"
+}
+
+### Deletar Categoria
+DELETE http://localhost:3000/categoria/{id}
+
+### Listar Todas as Categorias
+GET http://localhost:3000/categoria

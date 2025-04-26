@@ -1,0 +1,28 @@
+### Criar Administrador
+POST http://localhost:3000/administrador
+Content-Type: application/json
+
+{
+  "nome": "Admin",
+  "email": "admin@example.com",
+  "senha": "senha123"
+}
+
+### Buscar Administrador por ID
+GET http://localhost:3000/administrador/{id}
+
+### Atualizar Administrador
+PUT http://localhost:3000/administrador/{id}
+Content-Type: application/json
+
+{
+  "nome": "Admin Atualizado",
+  "email": "adminatualizado@example.com",
+  "senha": "novasenha123"
+}
+
+### Deletar Administrador
+DELETE http://localhost:3000/administrador/{id}
+
+### Listar Todos os Administradores
+GET http://localhost:3000/administrador

@@ -1,0 +1,29 @@
+### Criar Cliente
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "email": "joao@example.com",
+  "telefone": "+5561984470935",
+  "endereco": "Rua A, 123"
+}
+
+### Buscar Cliente por IDcreateGET http://localhost:3000/cliente/{id}
+
+### Atualizar Cliente
+PUT http://localhost:3000/cliente/{id}
+Content-Type: application/json
+
+{
+  "nome": "João da Silva Atualizado",
+  "email": "joaoatualizado@example.com",
+  "telefone": "987654321",
+  "endereco": "Rua B, 456"
+}
+
+### Deletar Cliente
+DELETE http://localhost:3000/cliente/{id}
+
+### Listar Todos os Clientes
+GET http://localhost:3000/cliente

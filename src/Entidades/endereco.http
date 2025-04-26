@@ -1,0 +1,30 @@
+### Criar Endereço
+POST http://localhost:3000/endereco
+Content-Type: application/json
+
+{
+  "rua": "Rua A",
+  "numero": "123",
+  "bairro": "Centro",
+  "cidade": "Brasília",
+  "estado": "DF",
+  "cep": "70000-000"
+}
+
+### Buscar Endereço por ID
+GET http://localhost:3000/endereco/{id}
+
+### Atualizar Endereço
+PUT http://localhost:3000/endereco/{id}
+Content-Type: application/json
+
+{
+  "rua": "Rua B",
+  "numero": "456"
+}
+
+### Deletar Endereço
+DELETE http://localhost:3000/endereco/{id}
+
+### Listar Todos os Endereços
+GET http://localhost:3000/endereco

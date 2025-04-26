@@ -1,0 +1,30 @@
+### === PAGAMENTO ===
+
+### Criar pagamento
+POST http://localhost:3000/pagamento
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "pedidoId": 1,
+  "valor": 150.00,
+  "metodo": "Cartão de Crédito"
+}
+
+### Buscar todos os pagamentos
+GET http://localhost:3000/pagamento
+
+### Buscar pagamento por ID
+GET http://localhost:3000/pagamento/1
+
+### Atualizar pagamento
+PUT http://localhost:3000/pagamento/1
+Content-Type: application/json
+
+{
+  "valor": 170.00,
+  "metodo": "Pix"
+}
+
+### Deletar pagamento
+DELETE http://localhost:3000/pagamento/1

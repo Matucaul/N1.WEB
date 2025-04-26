@@ -1,0 +1,27 @@
+### Criar Pedido
+POST http://localhost:3000/pedido
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "produtoId": 2,
+  "quantidade": 1,
+  "status": "pendente"
+}
+
+### Buscar Pedido por ID
+GET http://localhost:3000/pedido/{id}
+
+### Atualizar Pedido
+PUT http://localhost:3000/pedido/{id}
+Content-Type: application/json
+
+{
+  "status": "concluído"
+}
+
+### Deletar Pedido
+DELETE http://localhost:3000/pedido/{id}
+
+### Listar Todos os Pedidos
+GET http://localhost:3000/pedido

@@ -1,0 +1,28 @@
+### Criar Fornecedor
+POST http://localhost:3000/fornecedor
+Content-Type: application/json
+
+{
+  "nome": "Fornecedor XYZ",
+  "cnpj": "12345678000123",
+  "telefone": "987654321"
+}
+
+### Buscar Fornecedor por ID
+GET http://localhost:3000/fornecedor/{id}
+
+### Atualizar Fornecedor
+PUT http://localhost:3000/fornecedor/{id}
+Content-Type: application/json
+
+{
+  "nome": "Fornecedor XYZ Atualizado",
+  "cnpj": "12345678000123",
+  "telefone": "1122334455"
+}
+
+### Deletar Fornecedor
+DELETE http://localhost:3000/fornecedor/{id}
+
+### Listar Todos os Fornecedores
+GET http://localhost:3000/fornecedor
